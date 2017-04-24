@@ -1,0 +1,7 @@
+[package]
+name = "planets"
+version = "0.1.0"
+authors = ["bartohnio <bartochnio@gmail.com>"]
+
+[dependencies]
+sdl2 = "0.29.1"
