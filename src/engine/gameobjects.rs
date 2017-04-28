@@ -5,6 +5,7 @@ use sdl2::rect::Rect;
 use sdl2::rect::Point;
 use sdl2::render::*;
 use std::boxed::Box;
+use engine::components::ComponentUpdate;
 
 
 struct TextureDrawData {
@@ -39,20 +40,6 @@ pub struct ObjectData {
     pub draw_rect : Rect
 }
 
-struct AnimationComponent;
-struct PlayerComponent;
-
-impl ComponentUpdate for AnimationComponent
-{
-    fn Update(&self, game_obj : &GameObject , time : f32){
-        ()
-    }
-}
-
-trait ComponentUpdate {
-    fn Update(&self, game_obj : &GameObject , time : f32);
-    // add code here
-}
 
 pub struct GameObject {
     position : Point,

@@ -43,7 +43,6 @@ fn main() {
         texure_name : "animate.bmp".to_string(),
     };
 
-
     let game_object;
     {
         let texture_factory = TextureFactory::new(&renderer);
